@@ -7,9 +7,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" type="text/css" href="https://shauns-blog.s3.amazonaws.com/static/style.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://shauns-blog.s3.amazonaws.com/static/style.css">
     <script type="text/javascript" src="https://shauns-blog.s3.amazonaws.com/static/script.js">
-        
+    </script> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='script.js') }}">
     </script>
     <title>{% block title %} {% endblock %} Muizz Animashaun</title>
 </head>
