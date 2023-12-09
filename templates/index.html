@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <main>
+        <section class="hero">
+            <h1>muizz 'shaun</h1>
+            <h3>SOFTWARE ENGINEER</h3>
+            <h4>LONDON, ENGLAND</h4>
+            <div class="text-area">
+                <p class="text-1">Hello! My name is Muizz.</p>
+                <p class="text-2">I'm all about embracing the multifaceted world of technology, education, and exploration.</p>
+                <p class="text-3">
+                  Check out my <a href="https://github.com/652-Animashaun" target="_blank">bio</a>,
+                  <a href="https://muizz.hashnode.dev" target="_blank">my blog about tech</a>, 
+                  <a href="https://github.com/652-Animashaun" target="_blank">my Github</a>, 
+                  <a href="#">my videos</a>,
+                  <a href="https://docs.google.com/document/d/1UaL_FxfmxVfMiif2Q-CLepKQLI3rm61_eLT6ohaAzhs/edit?usp=sharing" target="_blank">my CV</a>.
+                </p>
+                <p class="text-4">
+                  Follow to stay in touch: 
+                  <a href="https://www.linkedin.com/in/mu-izz-animashaun-8682b091/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> LinkedIn</a>,
+                  <a href="#"><i class="fa-brands fa-x-twitter"></i> Twitter</a>,
+                </p>
+            </div>
+
+            <div class= "text-area">
+                <form class="input-group">
+                    <input id="command" type="text" class="input" placeholder="type 'help' cmd list" >
+                    <input id="submitHelp" type="submit" name="submit" class="action_btn">
+                </form>
+                <p id="commandModal" class="text-2">
+                </p>
+            </div>
+        </section>
+    </main>
+{% endblock %}

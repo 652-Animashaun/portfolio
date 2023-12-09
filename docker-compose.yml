@@ -1,0 +1,25 @@
+version: "3.10"
+services:
+
+  app:
+    build: .
+    container_name: cv
+    ports:
+      - "5000:5000"
+    environment:
+      - CONN_STR="mongodb://user:pass@mongo_db"
+    command: flask run --host 0.0.0.0 --port 5000 --debug
+    volumes:
+      - .:/app
+  #   depends_on:
+  #     - db
+
+  # db:
+  #   image: mongo:latest
+  #   container_name: mongo_db
+  #   environment:
+  #     - MONGO_INITDB_ROOT_USERNAME=user
+  #     - MONGO_INITDB_ROOT_PASSWORD=pass
+  #   ports:
+  #     - "27017:27017"
+

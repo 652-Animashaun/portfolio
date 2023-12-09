@@ -1,0 +1,10 @@
+Flask
+sqlalchemy
+python-dotenv
+zappa
+pymongo
+marshmallow
+flask_admin
+WTForms
+flask-s3
+urllib3<2
